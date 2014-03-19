@@ -39,13 +39,17 @@ body { font-family: "Roboto", sans-serif; font-weight: 400; background: #f1f1f1;
 .choice .choice__flagru { position: absolute; right: 0; width: 50%; right: 0; top: 0; bottom: 0; background: url(../img/ru.jpg) no-repeat 0 0; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
 .choice .choice__flageu { position: absolute; width: 50%; left: 0; top: 0; bottom: 0; background: url(../img/eu.jpg) no-repeat 0 0; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
 .choice .choice__question { width: 714px; left: 50%; text-align: center; background: rgba(0, 0, 0, 0.6); position: absolute; margin-left: -357px; top: 87px; color: white; padding: 20px 0; font-family: "Roboto Condensed", sans-serif; font-size: 47px; -webkit-transition: all 0.3s linear; -moz-transition: all 0.3s linear; -o-transition: all 0.3s linear; transition: all 0.3s linear; z-index: 12; }
+@media screen and (max-width: 714px) { .choice .choice__question { width: 100%; left: 0; margin-left: 0; font-size: 30px; } }
 .choice .choice__question span { font-size: 100px; line-height: 1; }
+@media screen and (max-width: 714px) { .choice .choice__question span { font-size: 50px; } }
 .choice .choice__question .choice__questionline1, .choice .choice__question .choice__questionline2 { margin: 0 230px; margin: 0 180px; }
+@media screen and (max-width: 714px) { .choice .choice__question .choice__questionline1, .choice .choice__question .choice__questionline2 { margin: 0 20%; } }
 .choice .choice__question .choice__questionline1 { text-align: left; }
 .choice .choice__question .choice__questionline2 { text-align: right; }
 .choice.is-results .choice__question { top: -500px; }
 
 .choice__eu, .choice__ru { position: absolute; bottom: 100px; left: 50%; width: 357px; background: rgba(0, 0, 0, 0.6); text-align: center; color: white; text-transform: uppercase; font-family: "Roboto Condensed", sans-serif; height: 88px; line-height: 88px; font-size: 47px; cursor: pointer; z-index: 10; -webkit-transition: all 0.3s linear; -moz-transition: all 0.3s linear; -o-transition: all 0.3s linear; transition: all 0.3s linear; }
+@media screen and (max-width: 714px) { .choice__eu, .choice__ru { width: 50%; font-size: 30px; } }
 .choice__eu:hover, .choice__ru:hover { background: rgba(0, 0, 0, 0.9); }
 .choice__eu:hover .checkbox, .choice__ru:hover .checkbox { margin-right: 13px; background: url('../img/icons-sb4b7b74cf0.png') 0 0 no-repeat; width: 45px; height: 38px; }
 .is-results .choice__eu, .is-results .choice__ru { bottom: -100px; opacity: 0; }
@@ -68,11 +72,14 @@ body { font-family: "Roboto", sans-serif; font-weight: 400; background: #f1f1f1;
 .footer .footer__right { float: right; width: 40%; text-align: right; }
 
 .results { opacity: 0; width: 714px; position: absolute; top: 87px; left: 50%; margin-left: -357px; color: white; background: rgba(0, 0, 0, 0.6); -webkit-transition: all 0.4s linear; -moz-transition: all 0.4s linear; -o-transition: all 0.4s linear; transition: all 0.4s linear; overflow: hidden; }
+@media screen and (max-width: 714px) { .results { width: 100%; margin-left: 0; left: 0; } }
 .is-results .results { opacity: 1; z-index: 2; }
 .results .results__eu, .results .results__ru { width: 50%; float: left; }
 .results .results__col { text-align: center; color: white; font-family: "Roboto Condensed", sans-serif; float: left; width: 50%; padding: 40px 0; }
 .results .results__title { font-size: 47px; text-transform: uppercase; }
+@media screen and (max-width: 714px) { .results .results__title { font-size: 20px; } }
 .results .results__value { font-size: 100px; margin: 30px 0; line-height: 1; font-family: "Roboto", sans-serif; font-weight: 300; }
+@media screen and (max-width: 714px) { .results .results__value { font-size: 50px; } }
 .results .results__vs { top: 50%; left: 50%; width: 100px; margin-left: -50px; margin-top: -0.5em; text-align: center; font-size: 25px; color: white; position: absolute; }
 .results .results__table { width: 130px; margin: 0 auto; border-spacing: 0; border-collapse: collapse; font-family: "Roboto", sans-serif; font-weight: 400; }
 .results .results__table th, .results .results__table td { font-size: 12px; }

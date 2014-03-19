@@ -81,12 +81,21 @@ body
 		font-size: 47px  
 		+transition(all .3s linear)
 		z-index: 12 
+		+max-screen(714)
+			width: 100%
+			left: 0
+			margin-left: 0  
+			font-size: 30px 
 		span
 			font-size: 100px 
 			line-height: 1 
+			+max-screen(714)
+				font-size: 50px 
 		.choice__questionline1,.choice__questionline2
 			margin: 0 230px 
 			margin: 0 180px 
+			+max-screen(714)
+				margin: 0 20% 
 		.choice__questionline1
 			text-align: left
 		.choice__questionline2
@@ -110,7 +119,9 @@ body
 	cursor: pointer
 	z-index: 10 
 	+transition(all .3s linear)
-	
+	+max-screen(714)
+		width: 50%
+		font-size: 30px  
 	&:hover
 		background: rgba(#000, .9) 
 		.checkbox
@@ -181,6 +192,10 @@ body
 	background: rgba(#000, .6) 
 	+transition(all .4s linear)
 	overflow: hidden
+	+max-screen(714)
+		width: 100%
+		margin-left: 0
+		left: 0  
 	.is-results &
 		opacity: 1
 		z-index: 2
@@ -194,14 +209,19 @@ body
 		float: left
 		width: 50% 
 		padding: 40px 0 
+		
 	.results__title
 		font-size: 47px 
 		text-transform: uppercase
+		+max-screen(714)
+			font-size: 20px 
 	.results__value
 		font-size: 100px 
 		margin: 30px 0
 		line-height: 1  
 		+lite 
+		+max-screen(714)
+			font-size: 50px 
 	.results__vs
 		top: 50%
 		left: 50%
