@@ -6,17 +6,147 @@
 	<title>Template</title>
 	<meta name="viewport" content="initial-scale=1"/>
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
-	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
-	<script src="js/jquery.js"></script>
-	<script src="js/common.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script>
+	$(document).ready(function() {
+		$('.choice__eu,.choice__ru').click(function(event) {
+			$('.choice').addClass("is-results");
+		});
+	});
+	</script>
 </head>
 <body>
-
-<!-- BEGIN  out-->
-<div class="out">
-
+<!-- begin langs  -->
+<div class="langs">
+	
+	<ul>
+		<li><a  class="is-active" href="#">Русский</a></li>
+		<li><a href="#">Eesti</a></li>
+		<li><a href="#">English</a></li>
+		<li><a href="#">Українська</a></li>
+	</ul>
 </div>
-<!-- END out-->
+<!-- end langs -->
+
+<!-- begin choice  -->
+<div class="choice">
+	<div class="choice__flagru"></div>
+	<div class="choice__flageu"></div>
+	<div class="choice__sep"></div>
+	<div class="choice__question">
+		<div class="choice__questionline1">А  <span>ТЫ</span></div>
+		<div class="choice__questionline2">  <span>ЗА</span> кого?</div>
+	</div>
+	<!-- begin choice__ru  -->
+	<div class="choice__eu">
+		<div class="checkbox"></div> ес
+	</div>
+	<!-- end choice__ru -->
+
+	<!-- begin choice__ua  -->
+	<div class="choice__ru">
+		<div class="checkbox is-checked"></div> россия
+	</div>
+	<!-- end choice__ua -->
+
+	<!-- begin results  -->
+	<div class="results">
+		<div class="results__vs">VS</div>
+		<div class="results__col">
+			<div class="results__title">РОССИЯ</div>
+			<div class="results__value">45%</div>
+			<table class="results__table">
+				<tr>
+					<th>Эстония:</th>
+					<td>123123</td>
+				</tr>
+				<tr>
+					<th>Эстония:</th>
+					<td>123123</td>
+				</tr>
+				<tr>
+					<th>Эстония:</th>
+					<td>123123</td>
+				</tr>
+			</table>
+		</div>
+		<div class="results__col">
+			<div class="results__title">ес</div>
+			<div class="results__value">45%</div>
+			<table class="results__table">
+				<tr>
+					<th>Эстония:</th>
+					<td>123123</td>
+				</tr>
+				<tr>
+					<th>Эстония:</th>
+					<td>123123</td>
+				</tr>
+				<tr>
+					<th>Эстония:</th>
+					<td>123123</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<!-- end results -->
+</div>
+<!-- end choice -->
+
+
+<!-- begin comments  -->
+<div class="comments">
+	<div class="comments__in">
+		<!-- begin comments__left  -->
+		<div class="comments__left">
+			<!-- Put this script tag to the <head> of your page -->
+			<script type="text/javascript" src="//vk.com/js/api/openapi.js?108"></script>
+
+			<script type="text/javascript">
+			  VK.init({apiId: API_ID, onlyWidgets: true});
+			</script>
+
+			<!-- Put this div tag to the place, where the Comments block will be -->
+			<div id="vk_comments"></div>
+			<script type="text/javascript">
+			VK.Widgets.Comments("vk_comments", {limit: 20, width: "400", attach: "*"});
+			</script>
+
+		</div>
+		<!-- end comments__left -->
+
+		<!-- begin comments__right  -->
+		<div class="comments__right">
+			<div id="fb-root"></div>
+			<script>(function(d, s, id) {
+			  var js, fjs = d.getElementsByTagName(s)[0];
+			  if (d.getElementById(id)) return;
+			  js = d.createElement(s); js.id = id;
+			  js.src = "//connect.facebook.net/ru_RU/all.js#xfbml=1&appId=212610058898248";
+			  fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));</script>
+
+			<div class="fb-comments" data-href="http://ruvs.eu" data-width="400" data-numposts="25" data-colorscheme="light"></div>
+		</div>
+		<!-- end comments__right -->
+	</div>
+</div>
+<!-- end comments -->
+
+<!-- begin footer  -->
+<div class="footer">
+	<div class="footer__in">
+		<div class="footer__left">
+			<a href="#">Условия исопльзования сайта</a>
+		</div>
+		<div class="footer__right">
+			Designed by <a href='#'>Aprol Designs</a>
+		</div>
+	</div>
+</div>
+<!-- end footer -->
 
 </body>
 </html>
