@@ -86,6 +86,7 @@ body
 			line-height: 1 
 		.choice__questionline1,.choice__questionline2
 			margin: 0 230px 
+			margin: 0 180px 
 		.choice__questionline1
 			text-align: left
 		.choice__questionline2
@@ -109,16 +110,7 @@ body
 	cursor: pointer
 	z-index: 10 
 	+transition(all .3s linear)
-	.checkbox
-		display: inline-block
-		+s(checkbox)
-		vertical-align: middle
-		margin-right: 20px 
-		position: relative
-		top: -5px 
-		&.is-checked
-			+s(checkbox1)
-			margin-right: 13px 
+	
 	&:hover
 		background: rgba(#000, .9) 
 		.checkbox
@@ -130,7 +122,16 @@ body
 .choice__eu
 	left: auto
 	right: 50% 
-
+.checkbox
+	display: inline-block
+	+s(checkbox)
+	vertical-align: middle
+	margin-right: 20px 
+	position: relative
+	top: -5px 
+	&.is-checked
+		+s(checkbox1)
+		margin-right: 13px 
 .comments
 	.comments__in
 		+clr
@@ -146,6 +147,11 @@ body
 		float: right 
 		// border: 1px solid red
 		// min-height: 20px
+	.comments__left,.comments__right
+		+max-screen(700)
+			float: none
+			width: auto
+			margin: 10px 30px  
 .footer
 	border-top: 4px solid #E5E5E5
 	.footer__in
