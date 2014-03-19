@@ -70,7 +70,7 @@ body { font-family: "Roboto", sans-serif; font-weight: 400; background: #f1f1f1;
 .results .results__eu, .results .results__ru { width: 50%; float: left; }
 .results .results__col { text-align: center; color: white; font-family: "Roboto Condensed", sans-serif; float: left; width: 50%; padding: 40px 0; }
 .results .results__title { font-size: 47px; text-transform: uppercase; }
-.results .results__value { font-size: 100px; margin: 30px 0; line-height: 1; }
+.results .results__value { font-size: 100px; margin: 30px 0; line-height: 1; font-family: "Roboto", sans-serif; font-weight: 300; }
 .results .results__vs { top: 50%; left: 50%; width: 100px; margin-left: -50px; margin-top: -0.5em; text-align: center; font-size: 25px; color: white; position: absolute; }
 .results .results__table { width: 130px; margin: 0 auto; border-spacing: 0; border-collapse: collapse; font-family: "Roboto", sans-serif; font-weight: 400; }
 .results .results__table th, .results .results__table td { font-size: 12px; }
