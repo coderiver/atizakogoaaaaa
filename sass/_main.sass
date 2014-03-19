@@ -169,16 +169,21 @@ body
 		@extend %in
 		font-size: 11px 
 		padding: 18px 0 
+		+clr
 	a
 		color: #222222
 		text-decoration: none 
 	.footer__left
 		float: left
 		width: 40% 
+		+max-screen(700)
+			margin-left: 5% 
 	.footer__right
 		float: right
 		width: 40% 
 		text-align: right
+		+max-screen(700)
+			margin-right: 5% 
 
 
 .results

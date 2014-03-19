@@ -66,10 +66,13 @@ body { font-family: "Roboto", sans-serif; font-weight: 400; background: #f1f1f1;
 @media screen and (max-width: 700px) { .comments .comments__left, .comments .comments__right { float: none; width: auto; margin: 10px 30px; } }
 
 .footer { border-top: 4px solid #e5e5e5; }
-.footer .footer__in { font-size: 11px; padding: 18px 0; }
+.footer .footer__in { font-size: 11px; padding: 18px 0; *zoom: 1; }
+.footer .footer__in:after { content: " "; display: table; clear: both; }
 .footer a { color: #222222; text-decoration: none; }
 .footer .footer__left { float: left; width: 40%; }
+@media screen and (max-width: 700px) { .footer .footer__left { margin-left: 5%; } }
 .footer .footer__right { float: right; width: 40%; text-align: right; }
+@media screen and (max-width: 700px) { .footer .footer__right { margin-right: 5%; } }
 
 .results { opacity: 0; width: 714px; position: absolute; top: 87px; left: 50%; margin-left: -357px; color: white; background: rgba(0, 0, 0, 0.6); -webkit-transition: all 0.4s linear; -moz-transition: all 0.4s linear; -o-transition: all 0.4s linear; transition: all 0.4s linear; overflow: hidden; }
 @media screen and (max-width: 714px) { .results { width: 100%; margin-left: 0; left: 0; } }
