@@ -56,8 +56,8 @@ body { font-family: "Roboto", sans-serif; font-weight: 400; background: #f1f1f1;
 
 .comments .comments__in { *zoom: 1; padding-bottom: 30px; }
 .comments .comments__in:after { content: " "; display: table; clear: both; }
-.comments .comments__left { width: 49%; float: left; border: 1px solid red; min-height: 20px; }
-.comments .comments__right { width: 49%; float: right; border: 1px solid red; min-height: 20px; }
+.comments .comments__left { width: 49%; float: left; }
+.comments .comments__right { width: 49%; float: right; }
 
 .footer { border-top: 4px solid #e5e5e5; }
 .footer .footer__in { font-size: 11px; padding: 18px 0; }
